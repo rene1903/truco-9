@@ -1,0 +1,73 @@
+$frente:lightblue;
+$sombra: #E91F5B;
+body {
+    background: tomato;
+    margin: 7em 0;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // align-items: center;
+    // height: 100vh;
+}
+h1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    top: .5em;
+}
+div {
+    width: 25%;
+    flex: auto;
+    margin: 1em;
+    line-height: 6;
+    margin-bottom: 2em;
+    text-align: center;
+    background: $frente;
+    transition: all 1s;
+    &:hover {
+        color: #fff;
+    }
+}
+.uno {
+    box-shadow: 5px 0 $sombra inset;
+    &:hover {
+        box-shadow: 500px 0 $sombra inset;
+    }
+}
+.dos {
+    box-shadow: -5px 0 $sombra inset;
+    &:hover {
+        box-shadow: -500px 0 $sombra inset;
+    }
+}
+.tres {
+    box-shadow: 0 5px $sombra inset;
+    &:hover {
+        box-shadow: 0 100px $sombra inset;
+    }
+}
+.cuatro {
+    box-shadow: 0 -5px $sombra inset;
+    &:hover {
+        box-shadow: 0 -100px $sombra inset;
+    }
+}
+.cinco {
+    box-shadow: 5px 0 $sombra inset,
+                -5px 0 $sombra inset;
+    &:hover {
+        box-shadow: -250px 0 $sombra inset,
+                    250px 0 $sombra inset;
+    }
+}
+.seis {
+    box-shadow: 0 0 $sombra inset,
+                0 0 $sombra inset;
+    &:hover {
+        box-shadow: 0 50px $sombra inset,
+                    0 -50px $sombra inset;
+    }
+}
